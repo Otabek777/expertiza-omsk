@@ -1574,6 +1574,38 @@ ul, ol {
   margin-bottom: 0 !important;
 }
 
+@media screen and (max-width: 1800px) {
+  .banner .slick-prev {
+    left: 10%;
+  }
+  .banner .slick-next {
+    right: 10%;
+  }
+}
+@media screen and (max-width: 1650px) {
+  .banner .slick-prev {
+    left: 6%;
+  }
+  .banner .slick-next {
+    right: 6%;
+  }
+}
+@media screen and (max-width: 1500px) {
+  .banner .slick-prev {
+    left: 3%;
+  }
+  .banner .slick-next {
+    right: 3%;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .banner .slick-prev {
+    left: 6px;
+  }
+  .banner .slick-next {
+    right: 6px;
+  }
+}
 @media screen and (max-width: 1024px) {
   .container {
     max-width: 700px;
@@ -1592,6 +1624,7 @@ ul, ol {
     position: fixed;
     top: 80px;
     left: 0;
+    max-width: 100%;
     width: 100%;
     background-color: #FFFFFF;
     -webkit-transition: all 0.4s ease;
@@ -1599,6 +1632,9 @@ ul, ol {
     height: 0;
   }
   .header__navbar ul {
+    max-width: 700px;
+    width: 100%;
+    margin: 0 auto;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
