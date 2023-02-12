@@ -1,3 +1,21 @@
+// Map
+
+if($(".projects__map")) {
+    $("#city1").click(function() {
+        $(".projects__nav .item").removeClass("active");
+        $("#Itemcity1").addClass("active");
+    });
+    $("#path107").click(function() {
+        $(".projects__nav .item").removeClass("active");
+        $("#Itemcity2").addClass("active");
+    });
+    $("#city3").click(function() {
+        $(".projects__nav .item").removeClass("active");
+        $("#Itemcity3").addClass("active");
+    });
+};
+
+
 $(".accordion_btn").click(function() {
     $(this).toggleClass("active");
 });
