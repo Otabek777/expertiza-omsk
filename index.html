@@ -48,12 +48,35 @@
                 </div>
                 <div class="header__right">
                     <a href="tel:8 (3812) 68-35-25" class="header__phone">8 (3812) <span>68-35-25</span></a>
-                    <button class="header__call">Заказать звонок</button>
+                    <button class="header__call modal-open">Заказать звонок</button>
                 </div>
             </div>
         </div>
     </header>
 
+    <!-- modal -->
+    <div class="modal">
+        <div class="modal__block">
+            <button class="close"></button>
+            <form action="" class="wrap">
+                <h5 class="title">Оставить заявку</h5>
+                <div class="box">
+                    <div class="input">
+                        <input type="text" placeholder="Имя">
+                    </div>
+                    <div class="input">
+                        <input type="email" placeholder="+7 (777) 777 7777" class="input_phone tel">
+                    </div>
+                </div>
+                
+                <div class="input">
+                    <input type="email" placeholder="Email">
+                </div>
+                <textarea class="textarea" placeholder="Сообщение"></textarea>
+                <button class="btn">Отправить</button>
+            </form>
+        </div>
+    </div>
     <main class="main">
         <section class="banner">
             <div class="banner__slider">
@@ -566,7 +589,7 @@
                     prom_expertiza@mail.ru
                 </a>
                 <a href="tel:8 (3812) 68-35-25" class="footer__phone">8 (3812) <span>68-35-25</span></a>
-                <button class="footer__call">Заказать звонок</button>
+                <button class="footer__call modal-open">Заказать звонок</button>
             </div>
             <div class="footer__bottom">
                 <div class="footer__nav">
