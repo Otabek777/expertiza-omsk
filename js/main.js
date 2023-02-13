@@ -5,7 +5,7 @@ if($(".projects__map")) {
         $(".projects__nav .item").removeClass("active");
         $("#Itemcity1").addClass("active");
     });
-    $("#path107").click(function() {
+    $("#city2").click(function() {
         $(".projects__nav .item").removeClass("active");
         $("#Itemcity2").addClass("active");
     });
