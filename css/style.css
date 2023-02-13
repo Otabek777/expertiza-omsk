@@ -841,6 +841,7 @@ ul, ol {
 .projects__map {
   width: calc(100% - 340px);
   padding-left: 19px;
+  position: relative;
 }
 .projects__map svg {
   width: 100%;
@@ -849,7 +850,7 @@ ul, ol {
 .projects__map svg g {
   fill: transparent !important;
 }
-.projects__map svg path {
+.projects__map svg path, .projects__map svg polygon {
   fill: #CADBE3 !important;
   stroke: #fff !important;
   stroke-width: 2px;
@@ -858,8 +859,44 @@ ul, ol {
   transition: all 0.2s ease;
   cursor: pointer;
 }
-.projects__map svg path:hover {
+.projects__map svg path:hover, .projects__map svg polygon:hover {
   fill: #35FFF3 !important;
+}
+.projects__map .region1 {
+  position: absolute;
+  bottom: 141px;
+  left: 31px;
+}
+.projects__map .region1 svg {
+  width: 19px;
+  height: 16px;
+}
+.projects__map .region2 {
+  position: absolute;
+  bottom: 132px;
+  left: 45px;
+}
+.projects__map .region2 svg {
+  width: 19px;
+  height: 20px;
+}
+.projects__map .region3 {
+  position: absolute;
+  bottom: 129px;
+  left: 59px;
+}
+.projects__map .region3 svg {
+  width: 20px;
+  height: 19px;
+}
+.projects__map .region4 {
+  position: absolute;
+  bottom: 126px;
+  left: 85px;
+}
+.projects__map .region4 svg {
+  width: 18px;
+  height: 24px;
 }
 
 .projects__box {
