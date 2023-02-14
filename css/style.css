@@ -1770,6 +1770,14 @@ ul, ol {
 .accordion_btn .down svg {
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
+  -webkit-transition-delay: 0.6s;
+          transition-delay: 0.6s;
+}
+.accordion_btn .down svg path {
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  -webkit-transition-delay: 0.6s;
+          transition-delay: 0.6s;
 }
 
 .accordion_block {
@@ -1865,9 +1873,13 @@ ul, ol {
 .accordion_btn.active .down svg {
   -webkit-transform: rotate(-180deg);
           transform: rotate(-180deg);
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
 }
 .accordion_btn.active .down svg path {
   fill: #35FFF3;
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
 }
 
 .accordion_btn.active + .accordion_block {
@@ -2106,6 +2118,7 @@ ul, ol {
     background-position: 65% !important;
   }
   .banner__title {
+    font-family: "Oswald", sans-serif;
     font-size: 25px;
     line-height: 30px;
     margin-bottom: 10px;
