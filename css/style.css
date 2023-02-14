@@ -1447,11 +1447,9 @@ ul, ol {
           transform: translateY(-50%);
   right: 110px;
 }
-.card__banner .wrap {
+.card__banner .h1 {
   max-width: 630px;
   width: 100%;
-}
-.card__banner .h1 {
   font-weight: 700;
   font-size: 73px;
   line-height: 88px;
@@ -1459,6 +1457,8 @@ ul, ol {
   color: #15435C;
 }
 .card__banner .title {
+  max-width: 630px;
+  width: 100%;
   font-weight: 400;
   font-size: 37px;
   line-height: 45px;
