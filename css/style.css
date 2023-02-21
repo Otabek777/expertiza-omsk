@@ -347,7 +347,7 @@ ul, ol {
 }
 
 .header__navbar {
-  max-width: 405px;
+  max-width: 425px;
   margin-right: 200px;
   margin-left: auto;
 }
@@ -364,8 +364,16 @@ ul, ol {
           transform: translateY(7px);
 }
 .header__navbar li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 26px;
   margin-right: 40px;
   margin-bottom: 14px;
+  position: relative;
+}
+.header__navbar li .down {
+  margin-left: 5px;
 }
 .header__navbar li:nth-child(3n) {
   margin-right: 0;
@@ -383,24 +391,49 @@ ul, ol {
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
 }
-.header__navbar a::after {
-  content: "";
-  width: 0;
-  height: 1px;
-  background: #35FFF3;
-  position: absolute;
-  bottom: -2px;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
 .header__navbar a:hover {
   color: #35FFF3;
 }
-.header__navbar a:hover::after {
+
+.sub_menu {
+  display: none;
+  width: 230px;
+  position: absolute;
+  top: 24px;
+  left: -20px;
+  z-index: 9;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 4px 20px rgba(21, 67, 92, 0.08);
+          box-shadow: 0px 4px 20px rgba(21, 67, 92, 0.08);
+  border-radius: 10px;
+  padding: 14px 14px 20px 17px;
+}
+.sub_menu ul {
+  padding: 0;
+}
+.sub_menu li {
+  margin: 0;
   width: 100%;
+  margin-bottom: 14px;
+}
+.sub_menu li:last-child {
+  margin-bottom: 0;
+}
+.sub_menu a {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #6A8695;
+}
+.sub_menu a:hover {
+  color: #15435C;
+}
+.sub_menu a::after {
+  display: none;
+}
+
+.header__navbar li:hover .sub_menu {
+  display: block;
 }
 
 .header__right {
@@ -1974,7 +2007,8 @@ ul, ol {
     background: #15435C;
   }
   .header__navbar.active {
-    height: 280px;
+    height: 300px;
+    overflow-y: auto;
   }
   .header__call {
     display: none;
@@ -2756,5 +2790,28 @@ ul, ol {
   .modal__block:hover::after {
     -webkit-transform: translate(250px, 20px) rotate(-45deg);
             transform: translate(250px, 20px) rotate(-45deg);
+  }
+  .header__navbar li {
+    height: auto;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .sub_menu {
+    width: 100%;
+    position: relative;
+    top: auto;
+    left: auto;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border-radius: 0;
+    padding: 0;
+  }
+  .sub_menu ul {
+    padding: 8px 0;
+    padding-left: 12px;
+    border-left: 1px solid #35FFF3;
   }
 }
